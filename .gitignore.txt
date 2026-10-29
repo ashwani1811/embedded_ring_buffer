@@ -1,0 +1,37 @@
+# --- Build Artifacts & Compiled Binaries ---
+# Ignore object files generated during compilation
+*.o
+*.obj
+
+# Ignore compiled test runner executables (adjust based on your Makefile targets)
+test_runner
+*.exe
+*.out
+
+# Ignore build directories if you use a separate build folder
+build/
+bin/
+
+# --- Static Analysis / Tool-specific Addons ---
+# Ignore local Cppcheck build folders or misra addon local caches if applicable
+.cppcheck/
+
+# --- Operating System Files ---
+# Ignore Windows thumbnail/index caches
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore macOS metadata files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- IDE & Editor Settings ---
+# Visual Studio Code settings
+.vscode/
+
+# Visual Studio solution / project files (if applicable)
+*.suo
+*.user
+*.vs/
